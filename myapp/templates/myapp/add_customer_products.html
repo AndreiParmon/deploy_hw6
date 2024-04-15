@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Добавить клиента и товары{% endblock %}
+
+{% block content %}
+    <h1>Обновить заказ</h1>
+    <form action="{% url 'add_customer_products' order.id %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Сохранить</button>
+    </form>
+{% endblock %}
