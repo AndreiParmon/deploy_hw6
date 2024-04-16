@@ -29,7 +29,7 @@ CSRF_COOKIE_SECURE = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'hw6.pythonanywhere.com',
+    'deployhw6.pythonanywhere.com',
 ]
 
 # Application definition
@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hw6$default',
-        'USER': 'hw6',
+        'NAME': 'deployhw6$default',
+        'USER': 'deployhw6',
         'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-        'HOST': 'hw6.mysql.pythonanywhere-services.com',
+        'HOST': 'deployhw6.mysql.pythonanywhere-services.com',
         'OPTIONS': {
             'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'",
             'charset': 'utf8mb4',
